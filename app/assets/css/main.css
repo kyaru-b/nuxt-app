@@ -1,0 +1,258 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme {
+  --animate-marquee-left: marquee-left 45s linear infinite;
+
+  @keyframes marquee-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-33.333%);
+    }
+  }
+}
+
+@font-face {
+  font-family: "VershinaFont";
+  src: url("/fonts/vershina-font.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "VershinaConstellation";
+  src: url("/fonts/vershina-constellation.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.brand-font,
+.logo span,
+.footer-top .logo span {
+  font-family: "VershinaFont", "Onest", sans-serif !important;
+}
+
+.font-akrobat {
+  font-family: "Onest", sans-serif !important;
+}
+
+.pipeline-step {
+  font-size: 13px !important;
+  letter-spacing: 0.05em !important;
+  padding: 6px 12px !important;
+}
+
+.pipeline-step b {
+  font-family: "Onest", sans-serif !important;
+  font-size: 12px !important;
+  opacity: 0.7 !important;
+}
+
+.pipeline-step span {
+  font-family: "Onest", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+@media (max-width: 760px) {
+  .pipeline-step {
+    font-size: 11px !important;
+    padding: 5px 9px !important;
+  }
+  .pipeline-step b {
+    font-size: 10px !important;
+  }
+  .pipeline-step span {
+    font-size: 12px !important;
+  }
+}
+
+/* === Constellation ВЕРШИНА — используем шрифт 17759 (1).TTF === */
+.peak-word text {
+  font-family: "VershinaConstellation", "Onest", Arial, sans-serif;
+  font-size: 130px;
+  font-weight: 800;
+  letter-spacing: 0em;
+}
+
+.peak-word-line {
+  fill: rgba(8, 45, 120, .14);
+  stroke: rgba(189, 216, 255, .7);
+  stroke-width: 1;
+  filter: url(#word-soft-glow);
+}
+
+.peak-word-stars {
+  fill: transparent;
+  stroke: #ffffff;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-dasharray: .1 50;
+  filter: url(#word-star-glow);
+  animation: constellation-twinkle-a 4.7s ease-in-out infinite;
+}
+
+.peak-word-stars-b {
+  stroke-dashoffset: -16;
+  animation-name: constellation-twinkle-b;
+  animation-duration: 5.9s;
+  animation-delay: -2.1s;
+}
+
+.peak-word-stars-c {
+  stroke-dashoffset: -32;
+  animation-name: constellation-twinkle-c;
+  animation-duration: 7.1s;
+  animation-delay: -4.4s;
+}
+
+@theme static {
+  --font-sans: "Onest", Arial, Helvetica, sans-serif;
+  --font-akrobat: "Onest", sans-serif;
+  --animate-preview-content-in: preview-content-in 320ms ease-out;
+  --animate-constellation-a: constellation-twinkle-a 4.7s ease-in-out infinite;
+  --animate-constellation-b: constellation-twinkle-b 5.9s ease-in-out infinite;
+  --animate-constellation-c: constellation-twinkle-c 7.1s ease-in-out infinite;
+  --animate-peak-breathe: peak-breathe 7s ease-in-out infinite;
+  --animate-pipeline-flow: pipeline-flow 14s linear infinite;
+  --animate-preview-pulse: pulse 3s ease-in-out infinite;
+  --animate-reference-marquee: marquee 110s linear infinite;
+  --animate-twinkle: twinkle 5s ease-in-out infinite;
+  --animate-preloader: preloader 1.05s ease-in-out infinite;
+}
+
+@keyframes preview-content-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes constellation-twinkle-a {
+  0%, 100% { opacity: .32; }
+  28% { opacity: 1; }
+  64% { opacity: .48; }
+}
+
+@keyframes constellation-twinkle-b {
+  0%, 100% { opacity: .78; }
+  37% { opacity: .3; }
+  73% { opacity: 1; }
+}
+
+@keyframes constellation-twinkle-c {
+  0%, 100% { opacity: .44; }
+  22% { opacity: .82; }
+  58% { opacity: .26; }
+  84% { opacity: 1; }
+}
+
+@keyframes peak-breathe {
+  0%, 100% { transform: translateY(3px); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes pipeline-flow {
+  to { stroke-dashoffset: -140; }
+}
+
+@keyframes pulse {
+  50% { transform: scale(.83); opacity: .45; }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: .32; }
+  50% { opacity: 1; }
+}
+
+@keyframes preloader {
+  from { transform: translateX(-110%); }
+  to { transform: translateX(320%); }
+}
+
+html {
+  min-height: 100%;
+  scroll-behavior: smooth;
+  background: #04132f;
+}
+
+body.vershina-body {
+  --page-gutter: clamp(24px, 4.5vw, 110px);
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  background: #04132f;
+  color: #07111f;
+  font-family: "Onest", Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.vershina-body.menu-open {
+  overflow: hidden;
+}
+
+.home-page .noise {
+  background-image: url("data:image/svg+xml,%3Csvg%20viewBox='0%200%20180%20180'%20xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter%20id='n'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='.9'%20numOctaves='3'%20stitchTiles='stitch'/%3E%3C/filter%3E%3Crect%20width='100%25'%20height='100%25'%20filter='url(%23n)'%20opacity='.7'/%3E%3C/svg%3E");
+}
+
+.home-page .site-header,
+.home-page .hero,
+.home-page .about,
+.home-page .services,
+.home-page .web-focus,
+.home-page .home-support,
+.home-page .partners,
+.home-page .site-footer {
+  padding-right: var(--page-gutter) !important;
+  padding-left: var(--page-gutter) !important;
+}
+
+@media (max-width: 760px) {
+  body.vershina-body {
+    --page-gutter: 20px;
+  }
+}
+
+/* Перекрытие стилей автозаполнения браузера (Chrome / Edge / Safari autofill) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: #ffffff !important;
+  -webkit-box-shadow: 0 0 0px 1000px #04132f inset !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+}
+
+/* === Кастомные тонкие полупрозрачные скроллбары под стиль проекта === */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(110, 160, 255, 0.6);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.25) transparent;
+}

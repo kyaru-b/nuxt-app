@@ -1,0 +1,48 @@
+<svg viewBox="0 0 1000 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-range-left" x1="0%" y1="0%" x2="86.6%" y2="50%">
+      <stop offset="0%" stop-color="rgba(66, 126, 231, 0.42)"/>
+      <stop offset="72%" stop-color="rgba(2, 22, 62, 0.8)"/>
+    </linearGradient>
+    <linearGradient id="grad-range-right" x1="100%" y1="0%" x2="18%" y2="57%">
+      <stop offset="0%" stop-color="rgba(57, 112, 213, 0.4)"/>
+      <stop offset="74%" stop-color="rgba(2, 19, 56, 0.84)"/>
+    </linearGradient>
+    <linearGradient id="grad-back" x1="0%" y1="0%" x2="82%" y2="57%">
+      <stop offset="0%" stop-color="rgba(97, 154, 248, 0.61)"/>
+      <stop offset="49%" stop-color="rgba(13, 52, 128, 0.72)"/>
+      <stop offset="100%" stop-color="rgba(3, 21, 62, 0.94)"/>
+    </linearGradient>
+    <linearGradient id="grad-left" x1="0%" y1="0%" x2="82%" y2="57%">
+      <stop offset="0%" stop-color="rgba(170, 204, 255, 0.5)"/>
+      <stop offset="58%" stop-color="rgba(44, 96, 188, 0.28)"/>
+      <stop offset="100%" stop-color="rgba(3, 24, 70, 0.72)"/>
+    </linearGradient>
+    <linearGradient id="grad-right" x1="100%" y1="0%" x2="29%" y2="70%">
+      <stop offset="0%" stop-color="rgba(35, 88, 181, 0.52)"/>
+      <stop offset="72%" stop-color="rgba(2, 19, 55, 0.96)"/>
+    </linearGradient>
+    <linearGradient id="grad-front" x1="0%" y1="0%" x2="82%" y2="57%">
+      <stop offset="0%" stop-color="rgba(40, 96, 199, 0.56)"/>
+      <stop offset="70%" stop-color="rgba(3, 24, 67, 0.96)"/>
+    </linearGradient>
+  </defs>
+  <g id="layer-range-left" opacity="0.34">
+    <polygon points="0,720 50,689 130,653 290,605 450,626 610,554 760,590 1000,644 1000,720" fill="url(#grad-range-left)"/>
+  </g>
+  <g id="layer-range-right" opacity="0.36">
+    <polygon points="0,720 0,634 140,610 280,533 420,575 580,485 740,554 880,520 1000,603 1000,720" fill="url(#grad-range-right)"/>
+  </g>
+  <g id="layer-mountain-back">
+    <polygon points="0,720 50,659 120,569 260,430 400,321 550,188 600,188 660,224 780,393 900,551 1000,696 1000,720" fill="url(#grad-back)"/>
+  </g>
+  <g id="layer-mountain-left">
+    <polygon points="0,720 50,659 120,569 260,430 400,321 550,188 600,188 600,720" fill="url(#grad-left)"/>
+  </g>
+  <g id="layer-mountain-right">
+    <polygon points="600,188 660,224 780,393 900,551 1000,696 1000,720 600,720" fill="url(#grad-right)"/>
+  </g>
+  <g id="layer-mountain-front">
+    <polygon points="0,720 60,686 170,647 330,596 480,624 620,565 760,610 890,585 1000,669 1000,720" fill="url(#grad-front)"/>
+  </g>
+</svg>

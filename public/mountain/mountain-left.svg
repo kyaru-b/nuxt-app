@@ -1,0 +1,10 @@
+<svg viewBox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-left" x1="9%" y1="21%" x2="91%" y2="79%">
+      <stop offset="0%" stop-color="rgba(170, 204, 255, 0.5)"/>
+      <stop offset="58%" stop-color="rgba(44, 96, 188, 0.28)"/>
+      <stop offset="100%" stop-color="rgba(3, 24, 70, 0.72)"/>
+    </linearGradient>
+  </defs>
+  <polygon points="0 100, 5 90, 12 75, 26 52, 40 34, 55 12, 60 12, 60 100" fill="url(#grad-left)"/>
+</svg>

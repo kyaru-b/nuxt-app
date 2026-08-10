@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "bitrix24": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-bitrix24"],
+      "env": {
+        "BITRIX24_DOMAIN": "your-domain.bitrix24.ru",
+        "BITRIX24_WEBHOOK_TOKEN": "your-webhook-token"
+      }
+    }
+  }
+}

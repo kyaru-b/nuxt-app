@@ -1,0 +1,9 @@
+<svg viewBox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-ls-far" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="rgba(54, 111, 213, 0.32)"/>
+      <stop offset="100%" stop-color="rgba(3, 25, 70, 0.7)"/>
+    </linearGradient>
+  </defs>
+  <polygon points="0 100, 3 80, 9 48, 18 63, 29 36, 39 60, 50 27, 61 50, 72 30, 82 57, 91 39, 100 70, 100 100" fill="url(#grad-ls-far)"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg viewBox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-back" x1="21%" y1="9%" x2="79%" y2="91%">
+      <stop offset="0%" stop-color="rgba(97, 154, 248, 0.61)"/>
+      <stop offset="49%" stop-color="rgba(13, 52, 128, 0.72)"/>
+      <stop offset="100%" stop-color="rgba(3, 21, 62, 0.94)"/>
+    </linearGradient>
+  </defs>
+  <polygon points="0 100, 5 90, 12 75, 26 52, 40 34, 55 12, 60 12, 66 18, 78 46, 90 72, 100 96, 100 100" fill="url(#grad-back)"/>
+</svg>

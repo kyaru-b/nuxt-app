@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 160" width="490" height="160">
+  <!-- Map pin / Location marker -->
+  <path d="M 70 10 C 28 10, 0 42, 0 82 C 0 125, 70 160, 70 160 C 70 160, 140 125, 140 82 C 140 42, 112 10, 70 10 Z" fill="#1b7a37" />
+  
+  <!-- Cube Body -->
+  <g transform="translate(18, 30)">
+    <!-- Top Face (Cap shape) -->
+    <polygon points="52,4 100,22 52,40 4,22" fill="#a4f02a" />
+    <polygon points="52,40 100,22 100,27 52,45 4,27 4,22" fill="#1b7a37" />
+    <!-- Left Face -->
+    <polygon points="4,27 52,45 52,95 4,77" fill="#7ed926" />
+    <!-- Right Face -->
+    <polygon points="52,45 100,27 100,77 52,95" fill="#a4f02a" />
+    
+    <!-- Face details (Eyes & Smile) -->
+    <ellipse cx="34" cy="55" rx="3.5" ry="5" fill="#1b7a37" />
+    <ellipse cx="70" cy="55" rx="3.5" ry="5" fill="#1b7a37" />
+    <path d="M 28 66 Q 52 86 76 66" fill="none" stroke="#1b7a37" stroke-width="5" stroke-linecap="round" />
+  </g>
+
+  <!-- Text GdeMesto.ru with guaranteed textLength and safe viewBox padding -->
+  <text x="155" y="104" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="50" font-weight="800" fill="#1b7a37" letter-spacing="-0.5" textLength="315" lengthAdjust="spacingAndGlyphs">GdeMesto.ru</text>
+</svg>

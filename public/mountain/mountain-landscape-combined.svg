@@ -1,0 +1,25 @@
+<svg viewBox="0 0 1440 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-ls-far" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(54, 111, 213, 0.32)"/>
+      <stop offset="100%" stop-color="rgba(3, 25, 70, 0.7)"/>
+    </linearGradient>
+    <linearGradient id="grad-ls-mid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(19, 62, 139, 0.38)"/>
+      <stop offset="100%" stop-color="rgba(2, 19, 53, 0.9)"/>
+    </linearGradient>
+    <linearGradient id="grad-ls-near" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(3, 25, 70, 0.38)"/>
+      <stop offset="82%" stop-color="#04142f"/>
+    </linearGradient>
+  </defs>
+  <g id="landscape-far">
+    <polygon points="0,300 43.2,250.8 129.6,172.08 259.2,208.98 417.6,142.56 561.6,201.6 720,120.42 878.4,177 1036.8,127.8 1180.8,194.22 1310.4,149.94 1440,226.2 1440,300" fill="url(#grad-ls-far)"/>
+  </g>
+  <g id="landscape-mid">
+    <polygon points="0,300 57.6,258.42 172.8,182.82 316.8,235.74 489.6,165.81 676.8,231.96 835.2,186.6 1008,239.52 1209.6,158.25 1440,247.08 1440,300" fill="url(#grad-ls-mid)"/>
+  </g>
+  <g id="landscape-near">
+    <polygon points="0,300 72,278.94 216,235.65 417.6,262.56 619.2,232.14 835.2,267.24 1051.2,239.16 1252.8,263.73 1440,264.9 1440,300" fill="url(#grad-ls-near)"/>
+  </g>
+</svg>
